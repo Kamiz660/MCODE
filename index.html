@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-  <img class="image-gradient" src="gradient.png" alt="gradient">
+  <img class="image-gradient" src="assets/gradient.png" alt="gradient">
   <div class="layer-blur"> </div>
   <header>
     <h1 data-aos="fade-down" data-aos-duration="1100" class="logo">MCODE</h1>
@@ -18,9 +18,15 @@
       <a data-aos="fade-down" data-aos-duration="1350" href="#">FEATURES</a>
       <a data-aos="fade-down" data-aos-duration="1400" href="#">RESOURCE</a>
       <a data-aos="fade-down" data-aos-duration="1450" href="#">DOCS</a>
-      <a id="Lightmode" data-aos="fade-down" data-aos-duration="1450" href="#">Light</a>
     </nav>
-    <button data-aos="fade-down" data-aos-duration="1100" id="sign-in" class="btn-signing">SIGN IN</button>
+      <!-- toggle button -->
+   <button-container>
+        <button id="lightmode" data-aos="fade-down" data-aos-duration="1100"> 
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-300q-74.92 0-127.46-52.54Q300-405.08 300-480q0-74.92 52.54-127.46Q405.08-660 480-660q74.92 0 127.46 52.54Q660-554.92 660-480q0 74.92-52.54 127.46Q554.92-300 480-300ZM200-450H50v-60h150v60Zm710 0H760v-60h150v60ZM450-760v-150h60v150h-60Zm0 710v-150h60v150h-60ZM262.92-656.92l-93.69-90.46 42.39-44.39 90.23 92.69-38.93 42.16Zm485.46 488.69-90.84-93.31 39.54-41.54 93.69 90.46-42.39 44.39Zm-91.46-528.85 90.46-93.69 44.39 42.39-92.69 90.23-42.16-38.93ZM168.23-211.62l93.31-90.84 40.77 39.54-90.08 94.07-44-42.77Z"/></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M481.15-140q-141.66 0-240.83-99.17-99.16-99.16-99.16-240.83 0-135.77 92.11-232.88 92.11-97.12 225.57-105.2 8.62 0 16.93.62 8.3.62 16.3 1.85-30.61 28.61-48.76 69.15-18.16 40.54-18.16 86.46 0 98.33 68.84 167.17Q562.82-424 661.15-424q46.54 0 86.77-18.15 40.23-18.16 68.46-48.77 1.23 8 1.85 16.31.61 8.3.61 16.92-7.69 133.46-104.8 225.57Q616.92-140 481.15-140Z"/></svg>
+        </button>
+        <button data-aos="fade-down" data-aos-duration="1100" id="sign-in" class="btn-signing">SIGN IN</button>
+   </button-container>
   </header>
   <main>
     <div class="content"> <!-- non header -->

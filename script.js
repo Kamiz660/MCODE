@@ -1,56 +1,37 @@
-const SignInBtn= document.getElementById("sign-in");
-const modal= document.getElementById("modal");
-const overlay= document.getElementById("overlay");
-const CloseBtn1= document.getElementById("CloseSign-In");
-const hidesignup= document.getElementById("FullName").hidden=true;
-const lightmode= document.getElementById("Lightmode");
+// Elements
+const SignInBtn   = document.getElementById("sign-in");
+const modal       = document.getElementById("modal");
+const overlay     = document.getElementById("overlay");
+const CloseBtn1   = document.getElementById("CloseSign-In");
+const themeToggle   = document.getElementById("lightmode");
+const highlight   = document.querySelector(".toggle-highlight-1");
+const signbtntoggle = document.querySelectorAll(".signup-in");
+const signinformhide = document.querySelectorAll("#FullName, #email, #confirmPassword");
 
-lightmode.addEventListener("click",switchmode);
-   function switchmode() {
-    if (document.body.getAttribute("data-theme") === "light") 
-    {
-        document.body.setAttribute("data-theme", "dark");
-    }
-    else {
-      document.body.setAttribute("data-theme", "light");
-    }
-  }
+// Theme Switcher
+themeToggle.addEventListener("click", () => {
+  const theme = document.body.getAttribute("data-theme");
+  document.body.setAttribute("data-theme", theme === "light" ? "dark" : "light");
+});
 
-  
+// Modal Handlers
+SignInBtn.addEventListener("click", () => {
+  overlay.classList.remove("hidden");
+  modal.classList.remove("hidden");
+});
 
-SignInBtn.addEventListener("click",SigninFormReveal);
+CloseBtn1.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+  modal.classList.add("hidden");
+});
 
-    function SigninFormReveal() {
-        overlay.classList.remove("hidden");
-        modal.classList.remove("hidden");
-    }
+// Toggle Sign In / Sign Up
+signbtntoggle.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    highlight.classList.toggle("highlight-right", index === 1);
 
-CloseBtn1.addEventListener("click",closeSignin);
- function closeSignin() {
-    overlay.classList.add("hidden");
-    modal.classList.add("hidden");
-        }   
-
-const signbtntoggle = document.querySelectorAll('.signup-in');
-const highlight = document.querySelector('.toggle-highlight-1');
-const signinformhide = document.querySelectorAll('#FullName, #email, #confirmPassword');
-
-signbtntoggle.forEach((btnX, index) => { /*eelemt being effected then for which btn with which index as in list*/
-
-  btnX.addEventListener('click', () => { /*activates listening for click in each btnx*/
-
-    highlight.classList.toggle('highlight-right', index === 1);
-     /*ele being class addd, what is being changed which is class list here, toggle as in turn on off highlight right as a class this depeends on index being one or not*/
-/*when btn clicked index=0 > false = rmoveees indeex=1 true truee=adds*/
-    
-if (index === 1) { // Check if the clicked button is the "Sign In" button (index 1)
-  signinformhide.forEach(element => {
-    element.classList.add("hidden2");
+    signinformhide.forEach(el => {
+      el.classList.toggle("hidden2", index === 1);
+    });
   });
-} else {
-  signinformhide.forEach(element => {
-    element.classList.remove("hidden2");
-  });
-}
-  });
-});  /* after )comes ;*/        
+});

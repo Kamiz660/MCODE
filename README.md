@@ -1,6 +1,5 @@
 # MCODE
-
-<img width="1901" height="1079" alt="1" src="https://github.com/user-attachments/assets/afb9236d-bdb1-42a5-949f-03c13d7a000a" />
+![MCODE](./assets/image.png)
 <img width="1919" height="1079" alt="2" src="https://github.com/user-attachments/assets/16a561a7-e5af-44af-a381-a190566d38fd" />
 
 
@@ -13,8 +12,6 @@ Built as a playground to learn and experiment with frontend concepts.
 - Sign In / Sign Up form  
 - Smooth animations and transitions  
 
-## Preview
-![MCODE](./assets/image.png)
 git
 ## Getting Started
 1. Clone the repo:

@@ -1,5 +1,7 @@
 # MCODE
-<img width="1919" height="1079" alt="1" src="https://github.com/user-attachments/assets/48a1502d-3854-407f-8a8e-ef7d0ed30f95" /><img width="1919" height="1079" alt="2" src="https://github.com/user-attachments/assets/16a561a7-e5af-44af-a381-a190566d38fd" />
+
+<img width="1901" height="1079" alt="1" src="https://github.com/user-attachments/assets/afb9236d-bdb1-42a5-949f-03c13d7a000a" />
+<img width="1919" height="1079" alt="2" src="https://github.com/user-attachments/assets/16a561a7-e5af-44af-a381-a190566d38fd" />
 
 
 First project made with **HTML, CSS, and JavaScript**.  

@@ -1,4 +1,5 @@
-# MCODE
+# MCODE 
+[CLick here to view site](https://bucolic-blancmange-c04280.netlify.app/#)
 ![MCODE](./assets/image.png)
 <img width="1919" height="1079" alt="2" src="https://github.com/user-attachments/assets/16a561a7-e5af-44af-a381-a190566d38fd" />
 

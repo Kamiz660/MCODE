@@ -13,7 +13,6 @@ Built as a playground to learn and experiment with frontend concepts.
 - Sign In / Sign Up form  
 - Smooth animations and transitions  
 
-git
 ## Getting Started
 1. Clone the repo:
    ```bash
